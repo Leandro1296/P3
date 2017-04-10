@@ -493,14 +493,12 @@ public class VentanaPuzzle {
 	private void keyDown(JButton btnA, JButton btnB, KeyEvent arg0) {
 		if (!btnA.isFocusable() && arg0.getKeyCode() == KeyEvent.VK_DOWN) {
 			cambiarBoton(btnA, btnB);
-			// contarMovimiento();
 		}
 	}
 
 	private void keyUp(JButton btnA, JButton btnB, KeyEvent arg0) {
 		if (!btnA.isFocusable() && arg0.getKeyCode() == KeyEvent.VK_UP) {
 			cambiarBoton(btnA, btnB);
-			// contarMovimiento();
 		}
 	}
 
@@ -523,7 +521,6 @@ public class VentanaPuzzle {
 		txtBotones.set(txtBotones.indexOf(btnA.getText()), txtBotones.get(txtBotones.indexOf(btnB.getText())));
 		txtBotones.set(aux1,aux);
 		btnA.setText(btnB.getText());
-		//btnA.setIcon(btnB.getIcon());
 		btnB.setText(aux);
 		btnA.setFocusable(true);
 		btnB.setFocusable(false);
